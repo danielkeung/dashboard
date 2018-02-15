@@ -1,0 +1,89 @@
+h1{
+   text-align: center;
+   color: #FFFFFF;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    cursor:pointer;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+}
+
+.top {
+    position: absolute;
+    top: 8%;
+    left: 39%;
+}
+
+.right {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+}
+
+.left {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+
+.center {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.centerbottom {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.tdlt {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+}
+
+.tdrt {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+}
+
+.tdlt2 {
+    position: absolute;
+    left: 5%;
+    top: 45%;
+}
+
+.tdrt2 {
+    position: absolute;
+    right: 5%;
+    top: 45%;
+}
+
+.tdlt3 {
+    position: absolute;
+    left: 5%;
+    top: 60%;
+}
+
+.tdrt3 {
+    position: absolute;
+    right: 5%;
+    top: 60%;
+}
+
+.whole {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+

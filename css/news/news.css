@@ -1,0 +1,17 @@
+h1{
+   text-align: center;
+   color: #FFFFFF;
+}
+
+h3{
+   text-align: center;
+   color: #FFFFFF;
+}
+
+.center {
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

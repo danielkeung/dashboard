@@ -1,0 +1,15 @@
+h1{
+   text-align: center;
+   color: #FFFFFF;
+}
+
+.myButton {
+    background:url("../../Assets/Plus_button.png") no-repeat;
+    cursor:pointer;
+    width: 220px;
+    height: 50px;
+    border: none;
+   float: left;
+   position: relative;
+   left: 20%;
+}

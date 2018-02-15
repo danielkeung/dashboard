@@ -1,0 +1,103 @@
+
+.form-signin {
+   max-width: 330px;
+   padding: 15px;
+   margin: 0 auto;
+   color: #017572;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+   margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+   font-weight: normal;
+}
+
+.form-signin .form-control {
+   position: relative;
+   height: auto;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   padding: 10px;
+   font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+   z-index: 2;
+}
+
+input[type='text'] {
+    width:300px;
+    height:40px;
+    font-family:Open Sans, sans-serif;
+    font-size:18px;
+    float: left;
+    position: relative;
+    right: 30%;
+}
+
+input[type='password'] {
+    width:300px;
+    height:40px;
+    font-family:Open Sans, sans-serif;
+    font-size:18px;
+    float: right;
+    position: relative;
+    left: 30%;
+}
+
+h1{
+   text-align: center;
+   color: #FFFFFF;
+}
+
+span{
+   color: #FFFFFF;
+}
+
+.myButton {
+    background:url("../../Assets/Login_button.png") no-repeat;
+    cursor:pointer;
+    width: 220px;
+    height: 50px;
+    border: none;
+   float: left;
+   position: relative;
+   left: 20%;
+}
+
+.logininput input{
+    border: none;
+    background: transparent;
+    width: 150px;
+    height: 30px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+::placeholder { 
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+}
+
+div { display: inline }
+
+p {    
+   float: left;
+   position: relative;
+   right: 10%; 
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}

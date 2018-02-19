@@ -57,17 +57,19 @@
                $conn->close();
 
                //output the tasks by using for loop
-               for ($y = 1; $y <= count($tasks['id']); $y++) {
-                if($tasks["id"][$y]){
-                  $displaycheckbox = '<tr onclick="edittasks('. $tasks["id"][$y] .')">';
-                  $displaycheckbox .='<td class="underline cursor" >'. $tasks["task_name"][$y] . '</td>';
-                  if($tasks["is_done"][$y]) {
-                      $displaycheckbox .= '<td class="checkbox cursor">&#10004;</td></tr>';
-                  } else {
-                      $displaycheckbox .= '<td class="checkbox cursor"></td></tr>';
+               if(count($tasks)){
+                  for ($y = 1; $y <= count($tasks['id']); $y++) {
+                   if($tasks["id"][$y]){
+                     $displaycheckbox = '<tr onclick="edittasks('. $tasks["id"][$y] .')">';
+                     $displaycheckbox .='<td class="underline cursor" >'. $tasks["task_name"][$y] . '</td>';
+                     if($tasks["is_done"][$y]) {
+                         $displaycheckbox .= '<td class="checkbox cursor">&#10004;</td></tr>';
+                     } else {
+                         $displaycheckbox .= '<td class="checkbox cursor"></td></tr>';
+                     }
+                     echo $displaycheckbox;
+                   }
                   }
-                  echo $displaycheckbox;
-                }
                }
             ?>
             <tr><td><img class="addButton" src="../../Assets/Plus_button.png" alt="Norway"

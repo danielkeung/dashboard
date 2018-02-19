@@ -53,7 +53,7 @@
 <html>
 
    <head>
-      <title>Testing</title>
+      <title>Home</title>
       <link rel="stylesheet" type="text/css" href="css/hmpage/hmpage.css">
       <link rel="stylesheet" type="text/css" href="css/bgimage.css">
 	    <!--Load the AJAX API-->
@@ -106,8 +106,8 @@
 
 		        // Set chart options
 		        var options = {'title':'',
-		                       'width':300,
-		                       'height':220};
+		                       'width':'280',
+		                       'height':'180'};
 
 		        // Instantiate and draw our chart, passing in some options.
 		        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
@@ -117,8 +117,18 @@
    </head>
 
     <body>
-      	<h1>Good Day <?php echo $_SESSION['username']?></h1>
 	 	<table class="mainpagecontainer">
+	 	  <tr>
+	 	  	<td width="33%">
+ 	  		  	<img id="logout" src="../../Assets/logout.png" style="width:50%;height:100%;cursor:pointer;"
+	    		  onclick="document.location.href='logout.php'">
+	 	  	</td>
+	 	  	<td width="33%">
+	 	  		<h1>Good Day <?php echo $_SESSION['username']?></h1>
+	 	  	</td>
+	 	  	<td width="33%">
+	 	  	</td>
+	 	  </tr>
 		  <tr>
 		    <td>
 		    	<div class="container">
@@ -141,7 +151,7 @@
 		    </td>
 		    <td>               
 		    	<div class="container">
-	    		  <img id="weather" src="../../Assets/Container.png" alt="Norway" style="width:100%;"
+	    		  <img id="News" src="../../Assets/Container.png" alt="Norway" style="width:100%;"
 	    		  onclick="document.location.href='newspage.php?description=<?php echo $description; ?>&img=<?php echo $img; ?>'">
 				  <div class="top">News</div>
 			      <div class="center">News headline</div>
@@ -150,7 +160,7 @@
 	      	</td> 
 		    <td>               
 		    	<div class="container">
-	    		  <img id="weather" src="../../Assets/Container.png" alt="Norway" style="width:100%;"
+	    		  <img id="Sport" src="../../Assets/Container.png" alt="Norway" style="width:100%;"
 	    		  onclick="document.location.href='sport.php'">
 	  			  <div class="top">Sport</div>
 			      <div class="center">Sport headline</div>
@@ -161,39 +171,38 @@
 		  <tr>
 		    <td>
 		    	<div class="container">
-	    		  <img id="weather" src="../../Assets/Container.png" alt="Norway" style="width:100%;"
-	    		  onclick="">
+	    		  <img id="Photos" src="../../Assets/Container.png" alt="Norway" style="width:100%;"
+	    		  onclick="document.location.href='photopage.php'">
 				  <div class="top">Photos</div>
+				  	<div class="topleft photocontainer">
+			  			
+			  		</div>
+				  	<div class="topright photocontainer">
+			  			
+			  		</div>
+					<div class="bottomleft photocontainer">
+			  			
+			  		</div>
+				  	<div class="bottomright photocontainer">
+			  			
+			  		</div>
 				</div>
 		    </td>
 		    <td>               
 		    	<div class="container">
-	    		    <img id="weather" src="../../Assets/Container.png" alt="Norway" style="width:100%;"
+	    		    <img id="Tasks" src="../../Assets/Container.png" alt="Norway" style="width:100%;"
 	    		    onclick="document.location.href='tasks.php'">
 				    <div class="top">Tasks</div>
-			  		<div class="tdlt">
-			  			Task 1
-			  		</div>
-			  		<div class="tdrt">
-			  			<img src="../../Assets/Plus_button_small.png" alt="Norway" height="30" width="30">
-			  		</div>
-			  		<div class="tdlt2">
-			  			Task 2
-			  		</div>
-			  		<div class="tdrt2">
-			  			<img src="../../Assets/Plus_button_small.png" alt="Norway" height="30" width="30">
-			  		</div>
-			  		<div class="tdlt3">
-			  			Task 3
-			  		</div>
-			  		<div class="tdrt3">
-			  			<img src="../../Assets/Plus_button_small.png" alt="Norway" height="30" width="30">
-			  		</div>
+				    <table class="taskRows">
+				    	<tr><td class="underline">Task 1</td><td>&nbsp</td><td class="chkcontainer"></td></tr>
+				    	<tr><td class="underline">Task 2</td><td>&nbsp</td><td class="chkcontainer"></td></tr>
+				    	<tr><td class="underline">Task 3</td><td>&nbsp</td><td class="chkcontainer"></td></tr>
+				    </table>
 			  	</div>
 	      	</td> 
 		    <td>               
 		    	<div class="container">
-	    		  <img id="weather" src="../../Assets/Container.png" alt="Norway" style="width:100%;"
+	    		  <img id="Clothes" src="../../Assets/Container.png" alt="Norway" style="width:100%;"
 	    		  onclick="">
 				  <div class="top">Clothes</div>
 				  <div class="whole" id="chart_div"></div>

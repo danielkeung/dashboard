@@ -1,11 +1,11 @@
 <html>
    
    <head>
-      <title>Testing</title>
+      <title>Login</title>
       <link rel="stylesheet" type="text/css" href="css/loginpage/loginpage.css">
       <link rel="stylesheet" type="text/css" href="css/bgimage.css">
    </head>
-	
+   
    <body>
       
       <h1>Hackathon</h1>
@@ -16,7 +16,7 @@
             
             if (isset($_POST['login']) && !empty($_POST['username']) 
                && !empty($_POST['password'])) {
-				
+            
                if ($_POST['username'] == 'Swapnil' && 
                   $_POST['password'] == '1234') {
                   $_SESSION['valid'] = true;

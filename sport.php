@@ -2,6 +2,7 @@
 <?php
    $csv = array();
    if($_SESSION['username']!=null) {
+      //read the .csv when getting into the sport page
       if(!isset($_POST['teamname']))
       {
          if (($file = fopen('I1.csv', 'r')) === false)
@@ -23,7 +24,7 @@
                }
                $row++;
             }
-            fclose($handle);
+            //fclose($handle);
          }
       }
    } else {
@@ -48,7 +49,7 @@
           }
       </script>
    </head>
-	
+   
    <body>
       <h1>Sport</h1></br>
       <form name="test" action="#" method="POST">
@@ -68,7 +69,7 @@
             $cnt = 0;
             
             for ($x = 1; $x <= count($csv['Date']); $x++) {
-                if($csv['HomeTeam'][$x]==$teamname||$csv['HomeTeam'][$x]==$AwayTeam){
+                if($csv['HomeTeam'][$x]==$teamname||$csv['HomeTeam'][$x]==$csv['AwayTeam'][$x]){
                   if($csv['HomeTeam'][$x]==$teamname) {
                      if($csv['FTR'][$x]=='H') {
                         $teamlist[$cnt] = $csv['AwayTeam'][$x];
@@ -83,7 +84,7 @@
                 }
             }
             //display teamlist
-            for ($y = 1; $y <= count($teamlist); $y++) {
+            for ($y = 1; $y < count($teamlist); $y++) {
                echo '<h5>'. $teamlist[$y] . '</h5>';
             }
          

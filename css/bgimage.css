@@ -1,5 +1,6 @@
 body {
    background-image: url("../../Assets/Background.png");
-  	padding-top: 40px;
-   padding-bottom: 40px;
+     background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
 }

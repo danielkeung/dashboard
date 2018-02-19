@@ -6,10 +6,53 @@ h1{
 .myButton {
     background:url("../../Assets/Plus_button.png") no-repeat;
     cursor:pointer;
-    width: 220px;
+    width: 200px;
     height: 50px;
     border: none;
    float: left;
    position: relative;
    left: 20%;
+}
+
+.cursor {
+  cursor:pointer; 
+}
+
+table {
+  width: 80%;
+  border-spacing: 2em;
+}
+
+td {
+   color: white; 
+}
+
+.addButton{
+    width: 7% ;
+    cursor:pointer; 
+}
+
+.underline {
+    border-bottom: 2px solid white;
+}
+
+.checkbox {
+  background-color: white;
+  border: 3px solid #FFE65E;
+  width:20px;
+  text-align:center; 
+  font-weight:bold; 
+  color:black;
+}
+
+.taskinput{
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.submitButton {
+    width: 200px;
+    height: 50px;
+    cursor:pointer; 
 }

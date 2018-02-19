@@ -45,45 +45,65 @@ h1{
     left: 10%;
 }
 
-.tdlt {
-    position: absolute;
-    left: 5%;
-    top: 30%;
-}
-
-.tdrt {
-    position: absolute;
-    right: 5%;
-    top: 30%;
-}
-
-.tdlt2 {
-    position: absolute;
-    left: 5%;
-    top: 45%;
-}
-
-.tdrt2 {
-    position: absolute;
-    right: 5%;
-    top: 45%;
-}
-
-.tdlt3 {
-    position: absolute;
-    left: 5%;
-    top: 60%;
-}
-
-.tdrt3 {
-    position: absolute;
-    right: 5%;
-    top: 60%;
-}
-
 .whole {
     position: absolute;
-    left: 10%;
+    left: 5%;
     top: 25%;
 }
 
+.topleft {
+    left: 10%;
+    top: 30%;
+}
+
+.photocontainer {
+  background-color: white;
+  border: 3px solid #FFE65E;
+  width:20%;
+  height:20%;
+  font-weight:bold; 
+    position: absolute;
+}
+
+.topright {
+    right: 10%;
+    top: 30%;
+}
+
+.bottomleft {
+    left: 10%;
+    bottom: 20%;
+  }
+
+.bottomright {
+    right: 10%;
+    bottom: 20%;
+}
+
+.taskRows {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    width:80%;
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+}
+
+.underline {
+    border-bottom: 2px solid black;
+    width:95%;
+}
+
+.chkcontainer {
+  background-color: white;
+  border: 3px solid #FFE65E;
+  width:8%;
+  height:16%;
+  font-weight:bold; 
+    position: absolute;
+}
+
+.mainpagecontainer {
+    border-collapse: separate;
+    border-spacing: 40px 40px;
+}
